@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1"><font class="bla">#include &lt;stdio.h&gt;</font><br>
+ 
+int main()<br>
+	<font class="bla">{</font><br>
+	<font class="bla">int</font> i, j, rows, columns, a[10][10], b[10][10];<br>
+	<font class="bla">int</font> Addition[10][10];<br>
+  
+	<font class="bla">printf</font>("\n Enter number of rows and columns  :  ");<br>
+	<font class="bla">scanf</font>("%d %d", &i, &j);<br>
+ 
+	<font class="bla">printf</font>("\n Enter the first matrix elements\n");<br>
+	<font class="bla">for</font>(rows = 0; rows < i; rows++)<br>
+	<font class="bla">{</font><br>
+	<font class="bla">for</font>(columns = 0; columns < j; columns++)<br>
+	<font class="bla">{</font><br>
+	<font class="bla">scanf</font>("%d", &a[rows][columns]);<br>
+	<font class="bla">}</font><br>
+	<font class="bla">}</font><br>
+   
+	<font class="bla">printf</font>("\n Enter the second matrix elements\n");<br>
+	<font class="bla">for</font>(rows = 0; rows < i; rows++)<br>
+	<font class="bla">{</font><br>
+	<font class="bla">for</font>(columns = 0; columns < j; columns++)<br>
+	<font class="bla">{</font><br>
+	<font class="bla">scanf</font>("%d", &b[rows][columns]);<br>
+	<font class="bla">}</font><br>
+	<font class="bla">}</font><br>
+  
+	<font class="bla">for</font>(rows = 0; rows < i; rows++)<br>
+	<font class="bla">{</font><br>
+	<font class="bla">for</font>(columns = 0; columns < j; columns++)<br>
+	<font class="bla">{</font><br>
+      		Addition[rows][columns] = a[rows][columns] + b[rows][columns];<br>
+	<font class="bla">}</font><br>
+	<font class="bla">}</font><br>
+ 
+	<font class="bla">printf</font>/("\n The sum of two matrix a and b = a + b \n");<br>
+	<font class="bla">for</font>(rows = 0; rows < i; rows++)<br>
+	<font class="bla">{</font><br>
+	<font class="bla">for</font>(columns = 0; columns < j; columns++)<br>
+	<font class="bla">{</font><br>
+	<font class="bla">printf</font>("%d \t ", Addition[rows][columns]);<br>
+	<font class="bla">}</font><br>
+	<font class="bla">printf</font>("\n");<br>
+	<font class="bla">}</font><br>
+ 	return 0;<br>
+	<font class="bla">}</font>
+<div id="div1"><p>
+Enter number of rows and columns : 2 2<br>
+Enter the first matrix elements<br>
+4 6<br>
+3 2<br>
+Enter the second matrix elements<br>
+11 23<br>
+44 56<br>
+The sum of two matrix<br>
+15 29<br>
+47 58   
+</p></div>
+
+</p></body></html>

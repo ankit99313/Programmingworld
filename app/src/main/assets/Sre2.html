@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1">
+<font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">int main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">int</font> no;<br>
+    <font class="bla">printf</font>("Enter a positve integer:\n");<br>
+    <font class="bla">scanf</font>("%d",&no);<br>
+
+    <font class="bla">printf</font>("sum=%d\n",sum(no));<br>
+return 0;<br>
+    <font class="bla">}</font><br>
+    <font class="bla">int sum(int n)</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">if</font>(n==0)<br>
+        return n;<br>
+    <font class="bla">else</font> <br>
+    return (n+<font class="bla">sum(n-1)</font>);<br>
+}<br>
+<div id="div1"><p>
+Enter a positive number:100<br>
+sum=5050
+</p></div>
+</p></body></html>

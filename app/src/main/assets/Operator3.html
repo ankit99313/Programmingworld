@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+
+<body>
+<p id="para1"><font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">int main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">int</font> a = 5, b = 5, c = 10, result;<br>
+    result = (a == b) && (c > b);<br>
+    <font class="bla">printf</font>("(a == b) && (c > b) is %d \n", result);<br>
+    result = (a == b) && (c < b);<br>
+    <font class="bla">printf</font>("(a == b) && (c < b) is %d \n", result);<br>
+    result = (a == b) || (c < b);<br>
+    <font class="bla">printf</font>("(a == b) || (c < b) is %d \n", result);<br>
+    result = (a != b) || (c < b);<br>
+    <font class="bla">printf</font>("(a != b) || (c < b) is %d \n", result);<br>
+    result = !(a != b);<br>
+    <font class="bla">printf</font>("!(a == b) is %d \n", result);<br>
+    result = !(a == b);<br>
+    <font class="bla">printf</font>("!(a == b) is %d \n", result);<br>
+    return 0;<br>
+    <font class="bla">}</font><br>
+</p><br>
+<div id="div1"><p>
+    (a == b) && (c > b) is 1<br>
+    (a == b) && (c < b) is 0<br>
+    (a == b) || (c < b) is 1<br>
+    (a != b) || (c < b) is 0<br>
+    !(a != b) is 1<br>
+    !(a == b) is 0<br>
+</p></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home"
+            />
+
+
+        <item
+            android:id="@+id/nav_update"
+            android:icon="@drawable/ic_update_black_24dp"
+            android:title="Check for update" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="About Developer" />
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_thumb_up_black_24dp"
+                android:title="Rate us" />
+            <item
+                android:id="@+id/fb_page"
+                android:icon="@drawable/ic_reply_all_black_24dp"
+                android:title="Like Facebook Page"
+                />
+
+
+        </menu>
+    </item>
+
+
+</menu>

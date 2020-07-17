@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1">
+<font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">#include &lt;stdlib.h&gt;</font><br>
+    <font class="bla">int main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">int</font> n, i, *ptr, sum = 0;<br>
+    <font class="bla">printf</font>("Enter number of elements: ");<br>
+    <font class="bla">scanf</font>("%d", &n);<br>
+    ptr = (int*) <font class="bla">calloc</font>(n, sizeof(int));<br>
+    <font class="bla">if</font>(ptr == NULL)<br>
+    <font class="bla">{</font><br>
+    <font class="bla">printf</font>("Error! memory not allocated.");<br>
+        exit(0);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">printf</font>("Enter elements:\n");<br>
+    <font class="bla">for</font>(i = 0; i < n; ++i)<br>
+    <font class="bla">{</font><br>
+    <font class="bla">scanf</font>("%d", ptr + i);<br>
+        sum += *(ptr + i);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">printf</font>("Sum = %d", sum);<br>
+    <font class="bla">free</font>(ptr);<br>
+    return 0;<br>
+    <font class="bla">}</font>
+<div id="div1"><p>
+Enter number of elements: 4<br>
+Enter elements<br>
+22<br>
+32<br>
+5<br>
+8<br>
+25<br>
+sum=92</p></div>
+</p>
+</body></html>

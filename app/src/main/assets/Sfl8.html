@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1"><font class="bla">include &lt;stdio.h&gt;</font><br>
+    <font class="bla">void main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">int</font> l, u, x, i;<br>
+    <font class="bla">printf</font>("Enter two numbers:");<br>
+    <font class="bla">scanf</font>("%d %d", &l, &u);<br>
+    <font class="bla">for</font>(x=1+l; x<=u-1; x++){<br>
+    <font class="bla">for</font>(i=2; i&lt;x; i++)<br>
+    <font class="bla">if</font>(x%i==0)<br>
+break;<br>
+    <font class="bla">if</font>(i==x)<br>
+    <font class="bla">printf</font>("%d", x);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">}</font>
+<div id="div1"><p>
+Enter two numbers:6<br>
+8<br>
+7
+</p></div>
+</p></body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html><body><h3 style="color:green"><center>Recursion</h3>
+<p style="font-size:16px;color:green">Calling of function by itself until some specified condition is not satisfied is called
+recursion.</p>
+<p style="font-size:14px;color:green">return-type function()<br>
+{<br>
+//body<br>
+function()<br>
+}
+</p>
+<p style="font-size:16px;color:green">Example:-</p>
+<p  style="font-size:15px; color:green;  padding:0px 0px 0px 90px;border-style:ridge;border-radius: 5px;">
+    #include &lt;stdio.h&gt;<br>
+    <font style="color:black">int  natural(int);</font><br>
+    <font style="color:black">int main()<br>
+    {<br>
+        int</font> n = 1;<br>
+    <font style="color:black">printf</font>(" The first 20 natural numbers are :");<br>
+    <font style="color:black">natural(n);</font><br>
+    return 0;<br>
+    <font style="color:black">}<br>
+        int natural(int n)<br>
+    {<br>
+        if</font>(n<=20)<br>
+    <font style="color:black">{<br>
+        printf</font>("%d ", n);<br>
+    <font style="color:black">natural(n+1);<br>
+    }<br>
+        }</font>
+
+</p>
+<div style=" background-color:black; font-size:16px; color:white;border-radius:5px;">
+    <p>
+
+        1  2  3  4  5  6  7  8  9  10 11 12 13 14 15 16 17 18 19 20
+    </p>
+</div>
+</body></html>

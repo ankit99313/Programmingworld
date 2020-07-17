@@ -1,0 +1,53 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+    </head>
+    <body>
+    <p id="para1">
+        <font class="bla">#include &lt;stdio.h&gt;</font><br>
+        <font class="bla">void check(char ch)</font><br>
+        <font class="bla">{</font><br>
+
+        <font class="bla">if</font> (ch >= 'A' && ch <= 'Z')<br>
+        <font style="margin:20px"><font class="bla">printf</font>("%c is an upperCase character", ch);</font><br>
+
+        <font class="bla">else if</font> (ch >= 'a' && ch <= 'z')<br>
+        <font style="margin:20px"><font class="bla">printf</font>("%c is a lowerCase character", ch);</font><br>
+
+        <font class="bla">else</font><br>
+        <font style="margin:20px"><font class="bla">printf</font>("%c is not an aplhabetic character", ch);</font><br>
+        <font class="bla">}</font><br>
+
+        <font class="bla">int main()</font><br>
+        <font class="bla">{</font><br>
+        <font class="bla">char</font> ch;<br>
+        <font class="bla">printf</font>("Enter a character: ");<br>
+        <font class="bla">scanf</font>("%c", &ch);<br>
+        <font class="bla">check(ch);</font><br>
+
+        return 0;<br>
+        }
+    </p>
+    <div id="div1">
+        <p>
+            Enter a character: y<br>
+            y is a lowercase character
+        </p>
+    </div>
+    </body>
+    </html>

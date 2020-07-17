@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body>
+<p id="para1">
+    <font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">#include &lt;stdbool.h&gt;</font><br>
+
+    <font class="bla">bool checkYear(int year)</font><br>
+    <font class="bla">{</font><br>
+    <font style="color:#808080;font-size:14px">// If a year is multiple of 400,</font><br>
+    <font style="color:#808080;font-size:14px">// then it is a leap year</font><br>
+        <font class="bla">if</font> (year % 400 == 0)<br>
+    return true;<br>
+
+
+        <font class="bla">if</font> (year % 100 == 0)<br>
+    return false;<br>
+
+    <font style="color:#808080;font-size:14px">// Else If a year is muliplt of 4,</font><br>
+    <font style="color:#808080;font-size:14px">// then it is a leap year</font><br>
+
+        <font>if</font> (year % 4 == 0)<br>
+    return true;<br>
+    return false;<br>
+    <font class="bla">}</font><br>
+
+    <font class="bla">int main()</font><br>
+    <font class="bla">{</font><br>
+        <font class="bla">int</font> year;<br>
+        <font class="bla">printf</font>("Enter the year: ");<br>
+        <font class="bla">scanf</font>("%d",&year);<br>
+
+    <font class="bla">checkYear</font>(year)? <font class="bla">printf</font>("Leap year"):<br>
+        <font class="bla">printf</font>("Not a leap year");<br>
+    return 0;<br>
+    }
+
+</p>
+<div id="div1">
+    <p>
+Enter the year: 5555<br>
+        Not a leap year
+    </p>
+</div>
+</body>
+</html>

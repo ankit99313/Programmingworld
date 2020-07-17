@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1"><br>
+<font class="bla">#include &lt;stdio.h&gt;</font><br>
+        <font class="bla">int factorial(int n);</font><br>
+        <font class="bla">int main()</font> {<br>
+        <font class="bla">int</font> n;<br>
+        <font class="bla">printf</font>("Enter a positive integer: ");<br>
+        <font class="bla">scanf</font>("%d",&n);<br>
+        <font class="bla">int</font> z=<font class="bla">factorial(n)</font>;<br>
+        <font class="bla">printf</font>("Factorial of %d = %d", n,z);<br>
+    return 0;<br>
+}<br>
+        <font class="bla">int factorial(int n) {</font><br>
+        <font class="bla">if</font> (n>=1)<br>
+        return n*<font class="bla">factorial(n-1)</font>;<br>
+        <font class="bla">else</font><br>
+        return 1;<br>
+}
+        <div class="div1"><p>
+Enter a positive number: 6<br>
+Factorial of 6=720</p></div>
+</p></body></html>

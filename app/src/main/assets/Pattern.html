@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p style="font-size:19px;color:#F6358A">1.Program to print solid rectangular star pattern
+</p>
+<p style="font-size:19px;border-style:inset">
+    <font color="#008000">#include <<stdio.h>stdio.h></font><br>
+    void <font color="#008000">rectangle</font>(int n, int m)<br>
+    {<br>
+    <font color="blue">int</font> i, j;<br>
+    <font color="#008000">for</font> (i = 1; i <= n; i++)<br>
+    {<br>
+    <font color="#008000">for</font> (j = 1; j <= m; j++)<br>
+    {<br>
+    <font color="blue">printf</font>("* ");<br>
+    }<br>
+    <font color="blue">printf</font>("\n");<br>
+    }<br>
+
+    }<br>
+
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> rows, columns;<br>
+    <font color="blue">printf</font>("Enter the number of rows: ");<br>
+    <font color="blue">scanf</font>("%d", &rows);<br>
+    <font color="blue">printf</font>("Enter the number of columns: ");<br>
+    <font color="blue">scanf</font>("%d", &columns);<br>
+    <font color="blue">printf</font>("\n");<br>
+    <font color="#008000">rectangle</font>(rows, columns);<br>
+    return 0;<br>
+    }
+
+</p>
+<p style="background-color:black;color:white;font-size:19px">
+    Output:-<br>
+    Enter the number of rows: 5<br>
+    Enter the number of columns: 5<br>
+    * * * * *<br>
+    * * * * *<br>
+    * * * * *<br>
+    * * * * *<br>
+    * * * * *
+</p>
+<p style="font-size:19px;color:#F6358A">
+    2.Program to print half pyramid pattern using stars
+</p>
+<p style="font-size:19px;border-style:inset">
+    <font color="#008000">#include <<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> i, j,n;<br>
+    <font color="blue">printf</font>("Enter the number of rows: ");<br>
+    <font color="blue">scanf</font>("%d",&n);<br>
+    <font color="#008000">for</font>(i = 0; i < n; i++)<br>
+    {<br>
+    <font color="#008000">for</font>(j = 0; j <= i; j++)<br>
+    {<br>
+    <font color="blue">printf</font>("* ");<br>
+    }<br>
+    <font color="blue">printf</font>("\n");<br>
+    }<br>
+    return 0;<br>
+    }<br>
+
+</p>
+<p style="background-color:black;color:white;font-size:19px">
+    Output:-<br>
+    Enter the number of rows: 3<br>
+    *<br>
+    * *<br>
+    * * *<br>
+</p>
+<p style="font-size:19px;color:#F6358A">
+    3.Program to print inverted half pyramid pattern using stars
+</p>
+<p style="font-size:19px;border-style:inset">
+    <font color="#008000">#include <<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> i, j, n, k = 0;<br>
+    <font color="blue">printf</font>("Enter the number of rows: ");<br>
+    <font color="blue">scanf</font>("%d",&n);<br>
+
+    <font color="#008000">for</font>(i= n; i>= 1; --i)<br>
+    {<br>
+    <font color="#008000">for</font>(j = 1; j <= i; ++j)<br>
+    {<br>
+    <font color="blue">printf</font>("* ");<br>
+    }<br>
+    <font color="blue">printf</font>("\n");<br>
+    }<br>
+
+    return 0;<br>
+    }
+
+</p>
+<p style="background-color:black;color:white;font-size:19px">
+    Output:-<br>
+    Enter the number of rows: 4<br>
+    * * * *<br>
+    * * *<br>
+    * *<br>
+    *
+
+</p>
+<p style="font-size:19px;color:#F6358A">
+    4.Half pyramid pattern using numbers
+</p>
+<p style="font-size:19px;border-style:inset">
+    <font color="#008000">#include<<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> i, j, n;<br>
+    <font color="blue">printf</font>("Enter the number of rows: ");<br>
+    <font color="blue">scanf</font>("%d", &n);<br>
+    <font color="#008000">for</font>(i = 1; i <= n; i++)<br>
+    {<br>
+    <font color="#008000">for</font>(j = 1; j <= i; j++)<br>
+    {<br>
+    <font color="blue">printf</font>("%d ", j);<br>
+    }<br>
+    <font color="blue">printf</font>("\n");<br>
+    }<br>
+    return 0;<br>
+    }<br>
+
+</p>
+<p style="background-color:black;color:white;font-size:19px">
+    Output:-<br>
+    Enter the number of rows: 5<br>
+    1<br>
+    1 2<br>
+    1 2 3<br>
+    1 2 3 4<br>
+    1 2 3 4 5<br>
+</p>
+<p style="font-size:19px;color:#F6358A">
+5.Inverted half pyramid pattern using numbers
+</p>
+<p style="font-size:19px;border-style:inset">
+    <font color="#008000">#include<<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> i, j, n;<br>
+    <font color="blue">printf</font>("Enter the number of rows: ");<br>
+    <font color="blue">scanf</font>("%d", &n);<br>
+    <font color="#008000">for</font>(i=n; i>=1; i--)<br>
+    {<br>
+    <font color="#008000">for</font>(j=1; j<=i; j++)<br>
+    {<br>
+    <font color="blue">printf</font>("%d ", j);<br>
+    }<br>
+    <font color="blue">printf</font>("\n");<br>
+    }<br>
+    return 0;<br>
+    }<br>
+
+</p>
+<p style="background-color:black;color:white;font-size:19px">
+    Output:-<br>
+    Enter the number of rows: 4<br>
+    1 2 3 4<br>
+    1 2 3<br>
+    1 2<br>
+    1
+</p>
+<p style="font-size:19px;color:#F6358A">
+    6.Half pyramid pattern using alphabet
+</p>
+<p style="font-size:19px;border-style:inset">
+    <font color="#008000">#include<<stdio.h>stdio.h></font><br>
+    <font color="#008000">#include<<stdlib.h>stdlib.h></font><br>
+    int main()<br>
+    {<br>
+        <font color="blue">int</font> i, j, n;<br>
+        <font color="blue">printf</font>("Enter the number of rows: ");<br>
+        <font color="blue">scanf</font>("%d", &n);<br>
+        <font color="#008000">for</font>(i=1; i<=n; i++)<br>
+    {<br>
+        <font color="#008000">for</font>(j=0; j&lt;i; j++)<br>
+    {<br>
+        <font color="blue">printf</font>("%c ", 'A'+j);<br>
+    }<br>
+        <font color="blue">printf</font>("\n");<br>
+    }<br>
+    return 0;<br>
+    }
+
+</p>
+<p style="background-color:black;color:white;font-size:19px">
+    Output:-<br>
+    Enter the number of rows: 5<br>
+    A<br>
+    A B<br>
+    A B C<br>
+    A B C D<br>
+    A B C D E<br>
+    A B C D E F<br>
+</p>
+<p style="font-size:19px;color:#F6358A">
+    7.solid rectangular program using alphabet
+</p>
+<p style="font-size:19px;border-style:inset">
+    <font color="#008000">#include<<stdio.h>stdio.h></font><br>
+    <font color="#008000">#include<<stdlib.h>stdlib.h></font><br>
+    int main()<br>
+    {<br>
+        <font color="blue">int</font> i, j, n, m;<br>
+        <font color="blue">printf</font>("Enter the number of rows: ");<br>
+        <font color="blue">scanf</font>("%d", &n);<br>
+        <font color="blue">printf</font>("Enter the number of columns: ");<br>
+        <font color="blue">scanf</font>("%d", &m);<br>
+        <font color="#008000">for</font>(i=n; i>=1; i--)<br>
+    {<br>
+        <font color="#008000">for</font>(j=0; j&lt;m; j++)<br>
+    {<br>
+        <font color="blue">printf</font>("%c ", 'A'+j);<br>
+    }<br>
+        <font color="blue">printf</font>("\n");<br>
+    }<br>
+    return 0;<br>
+    }
+</p>
+
+<p style="background-color:black;color:white;font-size:19px">
+    Output:-<br>
+    Enter the number of rows: 4<br>
+    Enter the number of columns: 6<br>
+    A B C D E F<br>
+    A B C D E F<br>
+    A B C D E F<br>
+    A B C D E F
+
+</p>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quizoperator">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="fill_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:background="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginTop="1dp"
+            >
+            <!--android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginLeft="1dp"
+             android:layout_marginRight="1dp"
+            -->
+
+            <TextView
+                android:id="@+id/counter1"
+                android:layout_gravity="right"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Question"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/counter2"
+                android:layout_gravity="left"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="0/0"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            >
+
+            <TextView
+                android:id="@+id/question"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="hlll0"
+                android:padding="16dp"
+                android:textSize="16dp"
+                android:background="@drawable/question_bg"
+                ></TextView>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/optionlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:text="Button"
+                android:backgroundTint="#000000"
+                android:background="@drawable/bounder"
+                />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:text="Button"
+                android:background="@drawable/bounder"
+                android:backgroundTint="#000000"
+                />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:text="Button"
+                android:backgroundTint="#000000"
+                android:background="@drawable/bounder"
+                />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_gravity="center"
+                android:text="Button"
+                android:background="@drawable/bounder"
+                android:backgroundTint="#000000"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bounder2"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/colorAccent"
+            android:alpha="0.07"
+            android:text="next question"
+            android:textColor="#ffff"
+            android:textStyle="bold"
+            android:enabled="false"
+            />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/adView_relative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-4994553913133799/6569547433"></com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

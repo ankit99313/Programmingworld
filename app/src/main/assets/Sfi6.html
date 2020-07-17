@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1">
+    <font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">int main()</font><br>
+    <font class="bla"> {</font><br>
+    <font class="bla"> FILE</font> *fp;<br>
+    <font class="bla">char</font> read[50];<br>
+    <font class="bla">printf</font>("Enter file name to delete:");<br>
+    <font class="bla">gets</font>(read);<br>
+    <font class="bla">if</font>(remove(read)==0)<br>
+    <font class="bla">printf</font>("File deleted");<br>
+    <font class="bla">else</font><br>
+    <font class="bla">perror</font>("remove");<br>
+    return 0;<br>
+    <font class="bla">}</font>
+    <div id="div1"><p >Enter file name to delete:who.txt<br>
+    File deleted
+</p></div>
+</p></body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1">
+<font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">int main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">FILE</font> *fp;<br>
+    <font class="bla">char</font> read[50];<br>
+    fp=<font class="bla">fopen</font>("who.txt", "r");<br>
+    <font class="bla">fgets</font>(read,50, fp);<br>
+    <font class="bla">printf</font>("%s",  read);<br>
+    <font class="bla">fclose</font>(fp);<br>
+    return 0;<br>
+}
+</p>
+<div id="div1"><p>
+    this is 'who.txt' file
+</p></div>
+</body></html>

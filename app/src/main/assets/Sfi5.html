@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body>
+<p id="para1">
+    <font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">#include &lt;stdlib.h&gt;</font><br>
+    <font class="bla"> void main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">FILE</font> *fp;<br>
+    <font class="bla">char</font> ch;<br>
+    <font class="bla">int</font> word=1, character=1;<br>
+    <font class="bla">char</font> filename[100];<br>
+    <font class="bla">printf</font>("Enter the filename: ");<br>
+    <font class="bla">scanf</font>("%s", filename);<br>
+        fp=<font class="bla">fopen</font>(filename, "r");<br>
+    <font class="bla">if</font>(fp==NULL)<br>
+    <font class="bla">{</font><br>
+    <font class="bla">printf</font>("File cannot be opened");<br>
+
+    <font class="bla">}</font><br>
+    <font class="bla">else</font><br>
+    <font class="bla">{</font><br>
+        ch<font class="bla">fgetc</font>(fp);<br>
+    <font class="bla">while</font>(ch!=EOF)<br>
+    <font class="bla">{</font><br>
+
+    <font class="bla">if</font>(ch==' '||ch=='\n')<br>
+    <font class="bla">{</font><br>
+    word++;<br>
+    <font class="bla">}</font><br>
+    <font class="bla">else</font><br>
+    <font class="bla">{</font><br>
+    character++;<br>
+    <font class="bla">}</font><br>
+        ch=<font class="bla">getc</font>(fp);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">printf</font>("\nThe number of words are: %d", word-1);<br>
+    <font class="bla">printf</font>("\nThe number of characters are: %d", character-1);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">fclose</font>(fp);<br>
+    <font class="bla"> }</font>
+
+</p>
+<div id="div1">
+    <p>
+
+        Enter the filename: eee.txt<br><br>
+        The number of words are: 4<br>
+        The number of characters are: 18<br>
+
+    </p>
+
+</div>
+</body>
+</html>

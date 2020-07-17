@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1"><font class="bla">#include &lt;stdio.h&gt;</font><br>
+
+    <font class="bla">void main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">char</font> ch;<br>
+     
+    <font class="bla">printf</font>("Enter a character: ");<br>
+    <font class="bla">scanf</font>("%c", &ch);<br>
+     
+    <font style="color:#808080;font-size:14px">//condition to check character is alphabet or not</font><br>
+    <font class="bla">if</font>((ch>='A' && ch<='Z') || (ch>='a' && ch<='z'))<br>
+    {<br>
+    <font style="color:#808080;font-size:14px">//check for VOWEL or CONSONANT</font><br>
+    <font class="bla">switch</font>(ch)<br>
+    <font class="bla">{</font><br>
+            case 'A':<br>
+            case 'E':<br>
+            case 'I':<br>
+            case 'O':<br>
+            case 'U':<br>
+            case 'a':<br>
+            case 'e':<br>
+            case 'i':<br>
+            case 'o':<br>
+            case 'u':<br>
+    <font class="bla">printf</font>("%c is a VOWEL.\n", ch);<br>
+                break;<br>
+            default:<br>
+    <font class="bla">printf</font>("%c is a CONSONANT.\n", ch);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">}</font><br>
+    <font class="bla">else</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">printf</font>("%c is not an alphabet.\n", ch);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">}</font>
+</p>
+<div id="div1"><p>
+ Enter a character: E<br>  
+    E is a VOWEL. </p></div>
+</body>
+</html>

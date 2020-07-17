@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body>
+
+<p id="para1">
+<font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">#include &lt;stdlib.h&gt;</font><br>
+    <font class="bla">int main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">int</font> *ptr, i , n1, n2;<br>
+    <font class="bla">printf</font>("Enter size: ");<br>
+    <font class="bla">scanf</font>("%d", &n1);<br>
+    ptr = (int*) <font class="bla">malloc</font>(n1 * sizeof(int));<br>
+    <font class="bla">printf</font>("Addresses of previously allocated memory: ");<br>
+    <font class="bla">for</font>(i = 0; i < n1; ++i)<br>
+    <font class="bla">printf</font>("%u\n",ptr + i);<br>
+    <font class="bla">printf</font>("\nEnter the new size: ");<br>
+    <font class="bla">scanf</font>("%d", &n2);<br>
+    <font style="color:#808080;font-size:14px">// rellocating the memory</font><br>
+    ptr = <font class="bla">realloc</font>(ptr, n2 * sizeof(int));<br>
+    <font class="bla">printf</font>("Addresses of newly allocated memory:\n");<br>
+    <font class="bla">for</font>(i = 0; i < n2; ++i)<br>
+    <font class="bla">printf</font>("%u\n", ptr + i);<br>
+
+    <font class="bla">free</font>(ptr);<br>
+    return 0;<br>
+}
+<div id="div1"><p>
+Enter size:3<br>
+Address of allocated memory:<br>
+11743464<br>
+11743468<br>
+11743472<br>
+Enter the new size:2<br>
+Address of newly allocated memory:<br>
+11743464<br>
+11743468
+</p>
+</div>
+</p></body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body>
+<p id="para1">
+    <font class="bla">#include &lt;stdio.h&lt;</font><br>
+    <font class="bla">void swap(int *,int *);</font><br>
+    <font class="bla">int main()</font><br>
+    <font class="bla">{</font><br>
+
+    <font class="bla">int</font> x,y;<br>
+    <font class="bla">printf</font>("Input 1st number: ");<br>
+    <font  class="bla">scanf</font>("%d",&x);<br>
+    <font class="bla">printf</font>("Input 2nd number: ");<br>
+    <font class="bla">scanf</font>("%d",&y);<br>
+
+    <font class="bla">printf</font>("Before swapping: x =%d, y =%d ",x,y);<br>
+    <font style="color:#808080;font-size:14px">//pass the address of both variables to the //function.</font><br>
+    <font class="bla">swap(&x, &y);</font><br>
+
+    <font class="bla">printf</font>("\nAfter swapping: x =%d, y =%d \n\n",x,y);<br>
+    return 0;<br>
+    <font class="bla">}</font><br>
+
+    <font class="bla">void swap(int *p, int *q)</font><br>
+    <font class="bla"> {</font><br>
+    <font style="color:#808080;font-size:14px">//p=&n1 so p store the address of n1, so *p <br>// store the value of n1</font><br>
+    <font style="color:#808080;font-size:14px">//q=&n2 so q store the address of n2, so *q store the value of n2</font><br>
+
+    <font class="bla">int</font> tmp;<br>
+    tmp = *p; <font style="color:#808080;font-size:14px">// tmp store the value of n1</font><br>
+    *p=*q;    <font style="color:#808080;font-size:14px">// *p store the value of *q that is value<br> // of n2</font><br>
+    *q=tmp;   <font style="color:#808080;font-size:14px">// *q store the value of tmp that is the // value of n1</font><br>
+    <font class="bla">}</font>
+
+</p>
+<div id="div1">
+    <p>
+        Input first number: 44<br>
+        Input second number: 66<br>
+        Before swapping: x=44, y=66<br>
+        After swapping: x=66, y=44
+    </p>
+</div>
+</body>
+</html>

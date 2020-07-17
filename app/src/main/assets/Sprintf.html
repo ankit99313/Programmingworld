@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div{}
+.date{
+}
+</style>
+</head>
+<body>
+<h3 style="color:green"><center>printf()</h3>
+<p style="font-size:16px;color:green">printf is a predefined function in "stdio.h" header files.By using this function we can print the data or user defined message on console or monitor.</p>
+<font style="color:green">Syntax</font>
+<div style="font-size:15px; color:green; padding:0px 45px 0px 45px;">printf("user defined message");</div><br>
+<font style="color:green">Syntax</font>
+<div style="font-size:15px; color:green;  padding:0px 45px 0px 45px;">printf("format specifiers", varaiable-name);</div><br>
+<div>
+    <div style="color:green"><span style="font-size:16px">For example:</span></div>
+    <div style="font-size:15px; color:green;border-style:ridge;border-radius:5px;  padding:0px 0px 0px 90px;"><font style="color:black">#include &lt;stdio.h&gt;<br>int main()<br>{<br>int</font> x=10; <font style="color:#808080;font-size:14px">//x is variable</font><br><font style="color:black">printf</font>("Value of x=%d", x);<br>return 0;<br><font style="color:black">}</font></div>
+</div>
+<div>
+    <p style=" background-color:black; font-size:16px; color:white;border-radius:5px;">Value of x=10</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<h3 style="color:green"><center>scanf()</h3>
+<p style="font-size:16px;color:green">scanf is a predefined function in "stdio.h" header file.It can be used to read the input value from keyword.</p>
+<font style="color:green;font-size:16px">Syntax</font>
+<div style="font-size:15px; color:green;  padding:0px 45px 0px 45px;">scanf("format specifier", &variable-name);</div><br>
+<div>
+    <div style="color:green">For example:</div>
+    <div style="font-size:15px; color:green;  padding:0px 0px 0px 90px;border-style:ridge;border-radius:5px;"><font style="color:black"> #include &lt;stdio.h&gt;<br>int main()<br>{<br>int</font> x; <font style="color:#808080;font-size:14px">//declaring integer variable</font><br><font style="color:black">printf</font>("Enter a number\n");<br><font style="color:black">scanf</font>("%d", &x);
+        <br><font style="color:black">printf</font>("number is %d", x);<br>return 0;<br><font style="color:black">}</font></div>
+    </div>
+<div>
+    <p style=" background-color:black; font-size:16px; color:white;border-radius:5px;">Enter a number<br>200<br>number is 200</p>
+</div>
+<p style="font-size:16px;color:green">In the above syntax format specifier is a special character in the C language used to specify the data type of variable. Format specifier used for different types of variables are:</p>
+<p style="font-size:16px;color:green">Integer- %d<br>Float- %f<br>Double- %lf<br>Single Character- %c<br>String- %s<br>Unsigned int- %u<br>Long int- %ld<br>Long double-%lf</p>
+</body>
+</html>

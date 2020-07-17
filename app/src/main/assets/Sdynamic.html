@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3 style="color:green">
+    <center>Dynamic memory allocation
+</h3>
+<p style="font-size:16px;color:green">It is used to allow the allocation of memory at runtime.There
+    are four functions are used to achieve dynamic memory allocation.<br>
+    malloc()<br>
+    calloc()<br>
+    realloc()<br>
+    free()</p>
+<p style="font-size:16px;color:green"><b>malloc()</b>:Allocates requested size of bytes and returns
+    a pointer first byte of allocated space.<br>
+    <b>calloc()</b>: Allocates space for an array of elements, initialize them to zero and then
+    returns a pointer to the memory.<br>
+    <b>free()</b>: Free previously allocated space.<br>
+    <b>realloc()</b>: Modifies the size of previously allocated space.
+</p>
+<h4 style="color:green">malloc</h4>
+<div style="font-size:15px;color:green">Syntax:</div>
+<br>
+
+<div style="font-size:15px; color:green;  padding:0px 0px 0px 45px;">ptr = (cast-type*)
+    malloc(byte-size)
+</div>
+
+<p style="font-size:16px;color:green">For example:<br>
+    ptr=(int*)malloc(100* sizeof(int));
+</p>
+<p style="font-size:16px;color:green">Since the size of int is 4 bytes, this statement will allocate
+    400 bytes of memory. And, the pointer ptr holds the address of the first byte in the
+    allocated memory.</p>
+
+
+</body>
+</html>

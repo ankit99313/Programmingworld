@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><body><style>
+table,th,td{border: 1px solid black;}
+</style><h3 style="color:green;"><center>File handling</h2>
+<p style="font-size:16px;color:green">A file is a place on the disk where a group of related data is stored. C supports a number of function that have the ability to perform basic file
+    operation, which include<br>
+    1.naming a file,<br>
+    2.opening a file,<br>
+    3.reading data from a file,<br>
+    4.writing data to a file,and<br>
+    5.closing a file
+</p>
+<table style="color:green;font-size:16px">
+<tr>
+    <th>Function name</th>
+    <th>operation</th>
+</tr>
+    <tr>
+        <td>fopen()</td>
+        <td>open a text file</td>
+    </tr>
+    <tr>
+        <td>fclose</td>
+        <td>close a file which has been opened for use</td>
+    </tr>
+    <tr><td>fprintf()</td>
+        <td>write a set of data values to a file</td>
+    </tr>
+    <tr><td>fscanf()</td>
+        <td>reads a set of data values from a file</td>
+    </tr>
+    <tr><td>getc()</td>
+        <td>reads a character from a file</td>
+    </tr>
+    <tr><td>putc()</td>
+        <td>write a character to a file</td>
+    </tr>
+    <tr><td>getw</td>
+        <td>reads an integer from a file</td>
+    </tr>
+    <tr>
+        <td>putw</td>
+        <td>writes an integer to a file</td>
+    </tr>
+</table>
+<p style="font-size:16px;color:green">Following is the general format for some operation on a file</p>
+<table style="font-size:16px;color:green">
+    <tr><th>operation</th>
+        <th>task</th></tr>
+    <tr><td>opening a file</td>
+        <td>File *fp;<br>fp=fopen("filename","mode");</td>
+    </tr>
+    <td>closing a file</td>
+    <td>File *fp;<br>fclose(fp);</td>
+    </tr>
+</table>
+<div style="font-size:16px;color:green">mode of operation</div><br>
+    <div>
+<table style="font-size:16px;color:green">
+    <tr>
+        <th>mode</th>
+        <th>task</h>
+    </tr>
+    <tr><td>r</td>
+        <td>It opens an existing text file for reading purpose.</td>
+    </tr>
+    <tr><td>r+</td>
+        <td>It opens an existing text file for reading and writing purpose.</td></tr>
+    <tr><td>w</td>
+        <td>It opens a text file for writing purpose.</td></tr>
+    <tr><td>w+</td>
+        <td>It opens a text file for writing and reading purpose.</td>
+    </tr>
+</table></div>
+</body></html>

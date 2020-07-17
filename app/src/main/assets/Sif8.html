@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<head>
+<style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<p id="para1"><font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">void main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">float</font> sp, cp, profit, loss;<br>
+    <font class="bla">printf</font>("Enter cost price\n");<br>
+    <font class="bla">scanf</font>("%f", &cp);<br>
+    <font class="bla">printf</font>("Enter selling price\n");<br>
+    <font class="bla">scanf</font>("%f", &sp);<br>
+    <font class="bla">if</font>(sp>cp)<br>{<br>
+    <font style="margin:20px"><font class="bla">profit</font>=sp-cp;</font><br>
+    <font style="margin:20px"><font class="bla">printf</font>("Profit is %f rupee", profit);</font><br>
+    <font class="bla">}</font><br>
+    <font class="bla">else</font><br>
+    <font class="bla">{</font><br>
+    <font style="margin:20px">loss=cp-sp;</font><br>
+    <font style="margin:20px"><font class="bla">printf</font>("Loss is %f rupee", loss);</font><br>
+    <font class="bla">}</font><br>
+    <font class="bla">}</font>
+</p>
+<div id="div1"><p>
+    Enter cost price<br>
+    569.22<br>
+    Enter selling price<br>
+    777.00<br>
+    Profit is 207.780029
+</p></div>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.programmingworld.ctutorial">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Operator6"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Operator5"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Operator4"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Operator3"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Operator2"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Operator1"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Pattern7"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Pattern6"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Pattern5"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Pattern4"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Pattern3"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Pattern2"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity android:name=".Pattern1"
+            android:parentActivityName=".Dowhileloop"/>
+        <activity
+            android:name=".FAQcontent1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Programcontent1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity android:name=".ChatActivity" />
+        <activity
+            android:name=".Operators"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizfilehandling"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizmemory"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizstructure"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizfunction"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizarray"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizpointer"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizloop"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizswitch"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizifelse"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Quizoperator"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Score"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Quizbasic"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Disclaimer"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pattern"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fmem0"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffile6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffile5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffile4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffun5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Farr6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Farr5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fpon5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fpon4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfi6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfi4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfi5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pst4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pst3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu8"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu7"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Par7"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Par6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Par21"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ppo4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Objectivecontent"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fbasic6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fbasic5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fbasic4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fbasic3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fbasic2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fbasic1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fpon3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fpon2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fpon1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Farr4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Farr3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Farr2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Farr1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffun4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffun3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffun2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffun1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fstr3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fstr2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fstr1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fmem3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fmem2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Fmem1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffile3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ffile2"
+            android:parentActivityName=".Dowhileloop" /> <!-- <activity android:name=".dddddddddd" /> -->
+        <activity
+            android:name=".Ffile1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfi3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfi2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfi1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pdy3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pdy2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pdy1"
+            android:parentActivityName=".Dowhileloop" />
+        <!--
+<activity android:name=".Sdy3" />
+        <activity android:name=".Sdy2" />
+        <activity android:name=".Sdy1" />
+        <activity android:name=".Pen2" />
+        <activity android:name=".Pen1" />
+        -->
+        <activity
+            android:name=".Pst2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pst1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pre2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pre1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfu1"
+            android:parentActivityName=".Dowhileloop" /> <!-- <activity android:name=".Penumerationcontent" /> -->
+        <activity
+            android:name=".Filehandling"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Dynamic"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Enumeration"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Structure"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Recursion"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Function"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Par4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Par3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Par2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Par1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ppo3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ppo2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Ppo1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pwl7"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pwl6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pwl5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pwl4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pwl3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pwl2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pwl1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl8"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl7"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pfl1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Psw4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Psw3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Psw2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Psw1"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif9"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif8"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif7"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif6"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif5"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif4"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif3"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif2"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pif1"
+            android:parentActivityName=".Dowhileloop" />
+        <!--
+<activity android:name=".Ifelsecontent" />
+        <activity android:name=".Pifelse" />
+        -->
+        <activity
+            android:name=".Poperator"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Array"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Pointer"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Dowhileloop"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Whileloop"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".For"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Switch"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Nestingif"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".If"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Sprintf"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".VariableKeyword"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Datatype"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Constant"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".First"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".Importance"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".History"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".theorycontent"
+            android:parentActivityName=".Dowhileloop" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4994553913133799~7983890822" />
+    </application>
+
+</manifest>

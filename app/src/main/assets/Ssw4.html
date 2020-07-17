@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body><p id="para1"><font class="bla">include &lt;stdio.h&gt;</font><br>
+    <font class="bla">void main()</font>
+    <font class="bla">{</font><br>
+    <font class="bla">char</font> operator;<br>
+    <font class="bla">double</font> first, second;<br>
+    <font class="bla">printf</font>("Enter an operator (+, -, *,/): \n");<br>
+    <font class="bla">scanf</font>("%c", &operator);<br>
+    <font class="bla">printf</font>("\nEnter two operands:\n ");<br>
+    <font class="bla">scanf</font>("%lf %lf", &first, &second);<br>
+    <font class="bla">switch</font> (operator) {<br>
+    case '+':<br>
+    <font class="bla">printf</font>("%.1lf + %.1lf = %.1lf", first, second, first + second);<br>
+        break;<br>
+    case '-':<br>
+    <font class="bla">printf</font>("%.1lf - %.1lf = %.1lf", first, second, first - second);<br>
+        break;<br>
+    case '*':<br>
+    <font class="bla">printf</font>("%.1lf * %.1lf = %.1lf", first, second, first * second);<br>
+        break;<br>
+    case '/':<br>
+    <font class="bla">printf</font>("%.1lf / %.1lf = %.1lf", first, second, first / second);<br>
+        break;<br>
+    <font style="color:#808080;font-size:14px">// operator doesn't match any case constant</font><br>
+    default:<br>
+    <font class="bla">printf</font>("Error! operator is not correct");<br>
+    <font class="bla">}</font><br>
+    <font class="bla">}</font>
+</p>
+<div id="div1"><p>
+Enter an operator (+, -, *,):<br>
+    +<br><br>
+    enter two operands:
+    4<br>
+    6<br>
+    4.0+6.0=10.0
+
+</p>
+</div>
+</body>
+</html>

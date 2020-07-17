@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<htm>
+<head>
+</head>
+<body>
+<h2>1.Arithmetic operator</h2>
+<div style="font-size:19px; border-style:inset;">
+    <font color="#008000">include <<stdio.h>stdio.h></font><br>
+int main()<br>
+{<br>
+    <font color="blue">int</font> a = 9, b = 4, c;<br>
+    
+    c = a+b;<br>
+    <font color="blue">printf</font>("a+b = %d \n", c);<br>
+    c = a-b;<br>
+    <font color="blue">printf</font>("a-b = %d \n", c);<br>
+    c = a*b;<br>
+    <font color="blue">printf</font>("a*b = %d \n", c);<br>
+    c = a/b;<br>
+    <font color="blue">printf</font>("a/b = %d \n", c);<br>
+    c = a%b;<br>
+    <font color="blue">printf</font>("Remainder when a divided by b = %d \n",c);<br>
+    
+    return 0;<br>
+}
+</div>
+<div style="background-color:black;"><p style="color:white; font-size:19px">Output:-<br>a+b = 13<br>
+a-b = 5<br>
+a*b = 36<br>
+a/b = 2<br>
+Remainder when a divided by b=1</p></div>
+<h2>2.Relational Operators</h2>
+<div style="border-style:inset; font-size:19px;">
+    <font color="#008000">#include <<stdio.h>stdio.h></font><br>
+    <font color="blue">int</font> main()<br>
+    {<br>
+    <font color="blue">int</font> a = 5, b = 5, c = 10;<br>
+    <font color="blue">printf</font>("%d == %d is %d \n", a, b, a == b);<br>
+    <font color="blue">printf</font>("%d == %d is %d \n", a, c, a == c);<br>
+    <font color="blue">printf</font>("%d > %d is %d \n", a, b, a > b);<br>
+    <font color="blue">printf</font>("%d > %d is %d \n", a, c, a > c);<br>
+    <font color="blue">printf</font>("%d < %d is %d \n", a, b, a < b);<br>
+    <font color="blue">printf</font>("%d < %d is %d \n", a, c, a < c);<br>
+    <font color="blue">printf</font>("%d != %d is %d \n", a, b, a != b);<br>
+    <font color="blue">printf</font>("%d != %d is %d \n", a, c, a != c);<br>
+    <font color="blue">printf</font>("%d >= %d is %d \n", a, b, a >= b);<br>
+    <font color="blue">printf</font>("%d >= %d is %d \n", a, c, a >= c);<br>
+    <font color="blue">printf</font>("%d <= %d is %d \n", a, b, a <= b);<br>
+    <font color="blue">printf</font>("%d <= %d is %d \n", a, c, a <= c);<br>
+    return 0;<br>
+    }
+</div>
+<div>
+    <p style="font-size:19px; background-color:black;color:white">Output:-<br>
+        5 == 5 is 1<br>
+        5 == 10 is 0<br>
+        5 > 5 is 0<br>
+        5 > 10 is 0<br>
+        5 < 5 is 0<br>
+        5 < 10 is 1<br>
+        5 != 5 is 0<br>
+        5 != 10 is 1<br>
+        5 >= 5 is 1<br>
+        5 >= 10 is 0<br>
+        5 <= 5 is 1<br>
+        5 <= 10 is 1 </p>
+</div>
+<h2>3.Logical operator</h2>
+<p style="font-size:19px; border-style:inset"><font color="#008000">#include <<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> a = 5, b = 5, c = 10, result;<br>
+    result = (a == b) && (c > b);<br>
+    <font color="blue">printf</font>("(a == b) && (c > b) is %d \n", result);<br>
+    result = (a == b) && (c < b);<br>
+    <font color="blue">printf</font>("(a == b) && (c < b) is %d \n", result);<br>
+    result = (a == b) || (c < b);<br>
+    <font color="blue">printf</font>("(a == b) || (c < b) is %d \n", result);<br>
+    result = (a != b) || (c < b);<br>
+    <font color="blue">printf</font>("(a != b) || (c < b) is %d \n", result);<br>
+    result = !(a != b);<br>
+    <font color="blue">printf</font>("!(a == b) is %d \n", result);<br>
+    result = !(a == b);<br>
+    <font color="blue">printf</font>("!(a == b) is %d \n", result);<br>
+    return 0;<br>
+    }<br>
+    </p>
+<div style="background-color:black; font-size:19px; color:white"><p>Output:-<br>
+    (a == b) && (c > b) is 1<br>
+    (a == b) && (c < b) is 0<br>
+    (a == b) || (c < b) is 1<br>
+    (a != b) || (c < b) is 0<br>
+    !(a != b) is 1<br>
+    !(a == b) is 0<br>
+</p></div>
+<h2>4.Assignment operator</h2>
+<p style="font-size:19px; border-style:inset"><font color="#008000">#include <<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> a = 5, c;<br>
+    c = a;      // c is 5<br>
+    <font color="blue">printf</font>("c = %d\n", c);<br>
+    c += a;     // c is 10<br>
+    <font color="blue">printf</font>("c = %d\n", c);<br>
+    c -= a;     // c is 5<br>
+    <font color="blue">printf</font>("c = %d\n", c);<br>
+    c *= a;     // c is 25<br>
+    <font color="blue">printf</font>("c = %d\n", c);<br>
+    c /= a;     // c is 5<br>
+    <font color="blue">printf</font>("c = %d\n", c);<br>
+    c %= a;     // c = 0<br>
+    <font color="blue">printf</font>("c = %d\n", c);<br>
+    return 0;<br>
+    }
+</p>
+<div style="font-size:19px; background-color:black; color:white">
+    <p>Output:-<br>
+        c = 5<br>
+        c = 10<br>
+        c = 5<br>
+        c = 25<br>
+        c = 5<br>
+        c = 0</p>
+</div>
+<h2>5.Bitwise operator</h2>
+<p style="font-size:19px; border-style:inset"><font color="#008000">#include <<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> a = 12, b = 25;<br>
+    <font color="blue">printf</font>("Output = %d", a&b);<br>
+    return 0;<br>
+    }</p>
+<div style="font-size:19px; color:white; background-color:black"><p>
+    Output:-<br>
+    Output = 8
+</p></div>
+<h2>6.Increment/Decrement operator</h2>
+<p style="font-size:19px; border-style:inset">
+    <font color="#008000">#include<<stdio.h>stdio.h></font><br>
+    int main()<br>
+    {<br>
+    <font color="blue">int</font> a = 10, b = 100;<br>
+    <font color="blue">float</font> c = 10.5, d = 100.5;<br>
+    <font color="blue">printf</font>("++a = %d \n", ++a);<br>
+    <font color="blue">printf</font>("--b = %d \n", --b);<br>
+    <font color="blue">printf</font>("++c = %f \n", ++c);<br>
+    <font color="blue">printf</font>("--d = %f \n", --d);<br>
+    return 0;<br>
+    }
+</p>
+<div style="background-color:black; color:white; font-size:19px">
+    <p>Output:-<br>
+        ++a = 11<br>
+        --b = 99<br>
+        ++c = 11.500000<br>
+        ++d = 99.500000</p>
+</div>
+</body>
+</htm>

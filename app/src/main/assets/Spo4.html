@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+          #para1
+     {
+     font-size:15px; color:green; border-style:ridge; margin:0px 10px; padding:0px 10px;border-radius: 5px;
+     }
+
+     #div1
+     {
+     background-color:black; font-size:16px; color:white;margin:0px 10px;border-radius: 5px;
+     }
+     .bla
+     {
+     color:black
+     }
+    </style>
+</head>
+<body>
+<p id="para1">
+    <font class="bla">#include &lt;stdio.h&gt;</font><br>
+    <font class="bla">void exchange(int *, int *);</font><br>
+    <font class="bla">main()</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">int</font> m, n;<br>
+    m=100;<br>
+    n=200;<br>
+    <font class="bla">printf</font>("before exchange :m=%d, n=%d\n", m, n);<br>
+    <font class="bla">exchange</font>(&m, &n);<br>
+    <font class="bla">printf</font>("after exchange :m=%d, n=%d", m, n);<br>
+    <font class="bla">}</font><br>
+    <font class="bla">exchange(int *a, int *b)</font><br>
+    <font class="bla">{</font><br>
+    <font class="bla">int</font> k;<br>
+    k=*a;<br>
+    *a=*b;<br>
+    *b=k;<br>
+
+    <font class="bla">}</font>
+
+</p>
+<div id="div1">
+    <p>
+        Output:<br>
+        before exchange :m=100, n=200<br>
+        after exchange :m=200,n=100
+    </p>
+</div>
+</body>
+</html>
