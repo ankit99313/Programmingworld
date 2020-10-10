@@ -10,6 +10,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.util.Log;
 import android.widget.Toast;
 
 import org.jsoup.Jsoup;
@@ -53,6 +54,8 @@ public class AppUpdateChecker {
             }
             String currentVersion = getCurrentVersion();
             //If the versions are not the same
+            Log.d(latestVersion,"latest");
+            Log.d(currentVersion,"current");
             if(!currentVersion.equals(latestVersion)&&latestVersion!=null){
                 final AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                 builder.setTitle("An Update is Available");

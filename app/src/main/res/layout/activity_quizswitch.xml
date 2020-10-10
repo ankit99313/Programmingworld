@@ -100,7 +100,6 @@
                 android:layout_margin="8dp"
                 android:layout_gravity="center"
                 android:text="Button"
-                android:backgroundTint="#000000"
                 android:background="@drawable/bounder"
                 />
             <Button
@@ -111,7 +110,6 @@
                 android:layout_gravity="center"
                 android:text="Button"
                 android:background="@drawable/bounder"
-                android:backgroundTint="#000000"
                 />
             <Button
                 android:id="@+id/button3"
@@ -120,7 +118,6 @@
                 android:layout_margin="8dp"
                 android:layout_gravity="center"
                 android:text="Button"
-                android:backgroundTint="#000000"
                 android:background="@drawable/bounder"
                 />
             <Button
@@ -131,7 +128,6 @@
                 android:layout_gravity="center"
                 android:text="Button"
                 android:background="@drawable/bounder"
-                android:backgroundTint="#000000"
                 />
 
         </LinearLayout>

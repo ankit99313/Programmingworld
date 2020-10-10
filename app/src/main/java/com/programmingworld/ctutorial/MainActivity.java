@@ -69,9 +69,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MessageFragement()).commit();
                 break;
 
+            case R.id.shop:
+              Intent intent=new Intent(MainActivity.this,ShopCategory.class);
+              startActivity(intent);
+              finish();
+                break;
+
 
             case R.id.nav_profile:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ProfileFragement()).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ProfileFragement()).commit();
+                Intent i=new Intent(MainActivity.this,AboutUs.class);
+                startActivity(i);
                 break;
 
             case R.id.nav_share:

@@ -16,11 +16,16 @@
             android:id="@+id/nav_update"
             android:icon="@drawable/ic_update_black_24dp"
             android:title="Check for update" />
+        <item
+            android:id="@+id/shop"
+            android:icon="@drawable/ic_baseline_shop_24"
+            android:title="Shopping"
+            />
 
         <item
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_person_black_24dp"
-            android:title="About Developer" />
+            android:title="About Us" />
     </group>
 
 

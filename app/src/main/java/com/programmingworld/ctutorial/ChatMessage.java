@@ -1,14 +1,16 @@
 package com.programmingworld.ctutorial;
 
+import android.util.Log;
+
 import java.util.Date;
 
 public class ChatMessage {
-    private String id;
+   // private String id;
     private String messageText;
-    private String messageUser;
+    private  String messageUser;
     private long messageTime;
 
-    //private String userId;
+    private String userId;
 
     public ChatMessage(String messageText, String messageUser) {
         this.messageText = messageText;
@@ -19,10 +21,34 @@ public class ChatMessage {
        messageTime = new Date().getTime();
     }
 
- /*  public ChatMessage(String userId) {
-        this.userId = userId;
-    }*/
 
+    public ChatMessage(String messageText, String messageUser,String userId) {
+        this.messageText = messageText;
+        this.messageUser = messageUser;
+        messageTime = new Date().getTime();
+         this.userId=userId;
+
+        // Initialize to current time
+     //   messageTime = new Date().getTime();
+    }
+
+   public ChatMessage(String messageUser) {
+        this.messageUser = messageUser;
+    }
+
+
+    public ChatMessage(String messageText, String messageUser,long messageTime) {
+        this.messageText = messageText;
+        this.messageUser=messageUser;
+        this.messageTime=messageTime;
+    }
+
+
+
+
+    public ChatMessage(long messageTime) {
+        this.messageTime = messageTime;
+    }
 
     public ChatMessage(){
 
@@ -36,7 +62,7 @@ public class ChatMessage {
         this.messageText = messageText;
     }
 
-    public String getMessageUser() {
+    public  String getMessageUser() {
         return messageUser;
     }
 
@@ -51,13 +77,13 @@ public class ChatMessage {
     public void setMessageTime(long messageTime) {
         this.messageTime = messageTime;
     }
-  /* public String getUserId() {
+   public String getUserId() {
         return userId;
     }
 
     public void setUserIdr(String userId) {
         this.userId = userId;
     }
-*/
+
 
 }

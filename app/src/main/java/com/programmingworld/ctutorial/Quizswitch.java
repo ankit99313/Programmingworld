@@ -24,6 +24,8 @@ import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 
+import static android.content.res.ColorStateList.*;
+
 public class Quizswitch extends AppCompatActivity {
     private TextView question,no_counter;
     private LinearLayout options_layout;
@@ -99,7 +101,7 @@ public class Quizswitch extends AppCompatActivity {
             options_layout.getChildAt(i).setEnabled(enable);
             if (enable)
             {
-                options_layout.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#000000")));
+                options_layout.getChildAt(i).setBackgroundTintList(valueOf(Color.parseColor("#ffffff")));
             }
         }
     }
@@ -125,7 +127,7 @@ public class Quizswitch extends AppCompatActivity {
                         option=list.get(position).getOptionC();
                     }
                     else if (count==3)
-                    {
+                     {
                         option=list.get(position).getOptionD();
                     }
                     playAnim(options_layout.getChildAt(count),0,option);
@@ -171,13 +173,13 @@ public class Quizswitch extends AppCompatActivity {
         if (selectedoption.getText().toString().equals(list.get(position).getCorrectAns()))
         {
             score++;
-            selectedoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00ff40")));
+            selectedoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#008000")));
             showToast2();
         }
         else {
-            selectedoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ff4000")));
+            selectedoption.setBackgroundTintList(valueOf(Color.parseColor("#ff0000")));
             Button correctoption = (Button) options_layout.findViewWithTag(list.get(position).getCorrectAns());
-            correctoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00ff40")));
+            correctoption.setBackgroundTintList(valueOf(Color.parseColor("#008000")));
             showToast();
 
             // Toast toast=Toast.makeText(getApplicationContext(),"wrong question",R.style.WrongToast);

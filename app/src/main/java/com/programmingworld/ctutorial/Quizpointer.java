@@ -100,7 +100,7 @@ public class Quizpointer extends AppCompatActivity {
             options_layout.getChildAt(i).setEnabled(enable);
             if (enable)
             {
-                options_layout.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#000000")));
+                options_layout.getChildAt(i).setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ffffff")));
             }
         }
     }
@@ -172,13 +172,13 @@ public class Quizpointer extends AppCompatActivity {
         if (selectedoption.getText().toString().equals(list.get(position).getCorrectAns()))
         {
             score++;
-            selectedoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00ff40")));
+            selectedoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#008000")));
             showToast2();
         }
         else {
-            selectedoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ff4000")));
+            selectedoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#ff0000")));
             Button correctoption = (Button) options_layout.findViewWithTag(list.get(position).getCorrectAns());
-            correctoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#00ff40")));
+            correctoption.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#008000")));
             showToast();
 
             // Toast toast=Toast.makeText(getApplicationContext(),"wrong question",R.style.WrongToast);

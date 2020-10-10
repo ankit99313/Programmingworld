@@ -4,53 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".ChatActivity">
 
+    <androidx.appcompat.widget.Toolbar
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-        android:id="@+id/fab"
+
+
+    <!--android:layout_alignParentBottom="true"-->
+    <ProgressBar
+        android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:clickable="true"
-        android:src="@drawable/ic_send_black_24dp"
-        android:tint="@android:color/white"
-        app:fabSize="mini" />
+        android:layout_centerInParent="true"
+        android:visibility="invisible"></ProgressBar>
 
-    <com.google.android.material.textfield.TextInputLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/list_of_messages"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@id/fab"
-        android:background="@drawable/bounder">
-
-
-        <EditText
-            android:id="@+id/input"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginLeft="18dp"
-            android:layout_marginBottom="10dp"
-            android:hint="Write a comment" />
-    </com.google.android.material.textfield.TextInputLayout>
-    <!--android:layout_alignParentBottom="true"-->
     <ListView
         android:id="@+id/list_of_messages"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_above="@id/fab"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginBottom="16dp"
         android:divider="@android:color/transparent"
-        android:dividerHeight="20dp"
-        android:stackFromBottom="true" />
+
+        android:dividerHeight="4dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+android:layout_marginBottom="5dp"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:src="@drawable/ic_send_black_24dp"
+        android:tint="@color/colorPrimary"
+        app:backgroundTint="#fff"
+        app:fabSize="mini"
+        app:rippleColor="@color/colorPrimary" />
+
+    <ScrollView
+
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/fab"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/scrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_gravity="bottom"
+android:layout_marginRight="3dp"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/list_of_messages"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@id/fab"
+        android:background="@drawable/bounder"
+        android:ems="@integer/google_play_services_version"
+        android:hint="Write a problem"
+        android:textColor="@color/browser_actions_text_color"
+        android:textColorHint="@color/common_google_signin_btn_text_light_default" />
+
+    </ScrollView>
+
 
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.programmingworld.ctutorial;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +25,8 @@ public class theorycontent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theorycontent);
         listView=(ListView)findViewById(R.id.listview);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 

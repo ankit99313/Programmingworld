@@ -7,6 +7,8 @@
     android:background="#ffff"
     tools:context=".Datatype">
 
+
+
     <ScrollView
         android:id="@+id/par6"
         android:layout_width="fill_parent"
