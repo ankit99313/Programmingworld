@@ -13,5 +13,9 @@
         <a href="https://helpssite.com/">HelpsSite Team</a>
     </string>
 
+    <string name="email">
+        <a href="mailto:ankit.03432@gmail.com">ankit.03432@gmail.com</a>
+    </string>
+
     <string name="txtCredits">www.helpssite.com</string>
 </resources>

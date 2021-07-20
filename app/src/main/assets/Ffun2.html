@@ -5,11 +5,9 @@
         Q. What is static function ?What is their use ?
     </b>
 </p>
-<p style="font-size:16px;color:green"><b>Ans.</b> In C,functions are global by default.The "static" keyword before a function name makes
-it static.For example,<br>static int sum(int x,int y)<br>
+<p style="font-size:16px;color:green"><b>Ans.</b>
+    In C, if we want to limit the scope of a function then we use static function. Static functions are restricted to the file where they are declared. We make any function static by using "static" keyword before a fucntion name.
+  For example,<br><br>static int sum(int x,int y)<br>
     {<br>
 return(x+y);<br>
     }</p>
-<p style="font-size:16px;color:green">
-Unlike global function in C,access to static functions is restricted to the file where they are declared
-.Therefore, when we want to restrict access to functions, we make them static.</p></body></html>

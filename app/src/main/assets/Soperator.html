@@ -2,25 +2,230 @@
 <html>
 <head>
 <style>
+    table,th,td{border: 1px solid black; color:green; font-size:16px; margin-top:4px;}
+    h4{color:#D81B60 ;display: inline;}
 </style>
 </head>
 <body>
 <h3 style="color:green"><center>Operator</h3>
 <p style="font-size:16px;color:green">It is a special symbol which is used to perform logical or mathematical operation on data or variable.</p>
 <p style="font-size:16px;color:green">Types of operator:</p>
-<h4 style="color:green">Arithmetic operator</h4>
-<p style="font-size:16px;color:green">+, - , * , / , %</p>
-<h4 style="color:green">Relational operators</h4>
-<p style="font-size:16px;color:green">==    Equal to<br>!=    Not equal to<br>>    Greater than<br><    Less than<br>>=    Greater than equal to<br><=    Less than or equal</p>
-<h4 style="color:green">Logical operators</h4>
-<p style="font-size:16px;color:green">&&    Logical AND<br>||    Logical OR<br>!    Logical NOT</p>
-<h4 style="color:green">Assignment operators</h4>
+<h4>1.Arithmetic operator:-</h4>
+<table>
+<tr>
+    <th>Symbol</th>
+    <th>Meaning</th>
+</tr>
+
+<tr>
+    <td><center>+</td>
+    <td><center>Addition</td>
+</tr>
+
+<tr>
+    <td><center>-</td>
+    <td><center>Subtraction</td>
+</tr>
+
+<tr>
+    <td><center>*</td>
+    <td><center>Multiplication</td>
+</tr>
+
+<tr>
+    <td><center>/</td>
+    <td><center>Division</td>
+</tr>
+
+
+<tr>
+    <td><center>%</td>
+    <td><center>Modulus</td>
+</tr>
+</table>
+<p style="color:green;">(i)Used to perform arithmetic operations.</p>
+<p style="color:green;">(ii)They have high priority.</p><br>
+
+<h4>2.Relational operators</h4>
+
+<table>
+    <tr>
+        <th>Symbol</th>
+        <th>Meaning</th>
+    </tr>
+
+    <tr>
+        <td><center>==</td>
+        <td><center>Equal to</td>
+    </tr>
+
+    <tr>
+        <td><center>!=</td>
+        <td><center>Not equal to</td>
+    </tr>
+
+    <tr>
+        <td><center>&gt;</td>
+        <td><center>Greater than</td>
+    </tr>
+
+    <tr>
+        <td><center>&lt;</td>
+        <td><center>Less than</td>
+    </tr>
+
+    <tr>
+        <td><center>&gt;=</td>
+        <td><center>Greater than or equal to</td>
+    </tr>
+
+    <tr>
+        <td><center>&lt;</td>
+        <td><center>Less than or equal to</td>
+    </tr>
+</table>
+
+<p style="color:green;">(i)These operators are used to compare two values.</p>
+<p style="color:green;">(ii)Used to form conditions in programming.</p>
+<p style="color:green;">(iii)They have lower priority than arithmetic operators.</p><br>
+
+<h4>3.Logical operators</h4>
+
+<table>
+    <tr>
+        <th>Symbol</th>
+        <th>Meaning</th>
+    </tr>
+
+    <tr>
+        <td><center>&&</td>
+        <td><center>Logical AND</td>
+    </tr>
+
+    <tr>
+        <td><center>||</td>
+        <td><center>Logical OR</td>
+    </tr>
+
+    <tr>
+        <td><center>!</td>
+        <td><center>Logical NOT</td>
+    </tr>
+</table>
+
+<p style="color:green;">(i)It is used to combine two or more conditions logically.</p>
+<p style="color:green;">(ii)They have lower priority than relational operatos.</p>
+
+<hr style="height:2px;background-color:gray;">
+<h5 style="display:inline">Logical 'AND' operator:</h5><br>
+<p>(i)It is denoted by symbol '&&'.</p>
+<p>(ii)Logical And is true if all the conditions are true.</p>
+
+<h5 style="display:inline">Logical 'OR' operator:</h5><br>
+<p>(i)It is denoted by '||'.</p>
+<p>(ii)It always returns boolean value(True/False). It returns true if either one or both conditon is true or otherwise it will return false.</p>
+
+<h5 style="display:inline">Logical 'NOT' operator:</h5><br>
+<p>(i)It is denoted by symbol '!'.</p>
+<p>(ii)It is true if condition is false.</p>
+
+
+
+<h4>4.Assignment operators</h4>
 <p style="font-size:16px;color:green">=, +=, -=, *=, /=, %=</p>
-<h4 style="color:green">Bitwise operators</h4>
-<p style="font-size:16px;color:green">&  Bitwise AND<br>|  Bitwise OR<br><<  Shift Left<br>>>  Shift Right</p>
-<h4 style="color:green">Increment/Decrement operators</h4>
-<p style="font-size:16px;color:green">++  Increment<br>--Decrement</p>
-<h4 style="color:green">Special operators</h4>
-<p style="font-size:16px;color:green">&  -It is used find address of a variable.<br>* - It is used to declare pointer type variable.<br>sizeof() -It returns the memory size of variable.</p>
+
+<h4>5.Bitwise operators</h4>
+
+
+<table>
+    <tr>
+        <th>Symbol</th>
+        <th>Meaning</th>
+    </tr>
+
+    <tr>
+        <td><center>&</td>
+        <td><center>Bitwise AND</td>
+    </tr>
+
+    <tr>
+        <td><center>!</td>
+        <td><center>Bitwise OR</td>
+    </tr>
+
+    <tr>
+        <td><center><<</td>
+        <td><center>Shift left</td>
+    </tr>
+
+    <tr>
+        <td><center>&gt;></td>
+        <td><center>Shift right</td>
+    </tr>
+
+</table><br>
+
+<h4>6.Increment/Decrement operators</h4>
+
+
+<table>
+    <tr>
+        <th>Symbol</th>
+        <th>Meaning</th>
+    </tr>
+
+    <tr>
+        <td><center>++</td>
+        <td><center>Increment</td>
+    </tr>
+
+    <tr>
+        <td><center>--</td>
+        <td><center>Decrement</td>
+    </tr>
+</table>
+
+
+<p style="color:green;">(i)These operators can't be operators on constant values.</p>
+<p style="color:green;">(ii)Both operators can be used in prefix(++x) and postfix(x++).</p>
+
+<hr style="height:2px;background-color:gray;">
+<h5 style="display:inline">Increment operator:</h5><br>
+<p>(i)It is denoted by symbol '++'.</p>
+<p>(ii)It is an unary operator.</p>
+<p>(iii)It increments the value of operand by one(1).</p>
+
+
+<h5 style="display:inline">Decrement operator:</h5><br>
+<p>(i)It is denoted by symbol '--'.</p>
+<p>(ii)It is an unary operator.</p>
+<p>(iii)It decrements the value of operand by one(1).</p>
+
+
+
+
+<h4>7.Special operators</h4>
+
+
+<table>
+    <tr>
+        <th>Symbol</th>
+        <th>Meaning</th>
+    </tr>
+
+    <tr>
+        <td><center>&</td>
+        <td><center>It is used for find address of a variable.</td>
+    </tr>
+
+    <tr>
+        <td><center>*</td>
+        <td><center>It is used to declare pointer type variable.</td>
+    </tr>
+
+    <tr>
+        <td><center>sizeof()</td>
+        <td><center>It returns the memory size of variable.</td>
+    </tr>
 </body>
 </html>

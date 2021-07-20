@@ -72,8 +72,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:linksClickable="true"
-                android:text="@string/helpssite"
+                android:linksClickable="false"
+                android:text="Ankit Kumar"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"
                 android:textStyle="bold"></TextView>
@@ -156,7 +156,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="support@helpssite.com"
+                android:text="ankit90234@gmail.com"
                 android:textColor="#000000"
                 android:textSize="18sp">
 

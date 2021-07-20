@@ -93,36 +93,5 @@ public class HomeFragement extends Fragment {
         return view;
     }
 
-    public void rateMe(View view){
-        try{
-            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id="+"com.programmingworld.ctutorial")));
-        }
-        catch (ActivityNotFoundException e){
-            startActivity(new Intent(Intent.ACTION_VIEW,Uri.parse("https://play.google.com/store/apps/details?id="+"com.programmingworld.ctutorial")));
-        }
 
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Intent intent=null,chooser=null;
-        int id=item.getItemId();
-        if (id==R.id.feedback){
-            intent=new Intent(Intent.ACTION_SEND);
-            intent.setData(Uri.parse("mailto:"));
-            String[] to={"ankit.03432@gmail.com"};
-            intent.putExtra(Intent.EXTRA_EMAIL,to);
-            intent.putExtra(Intent.EXTRA_SUBJECT,"The C tutorial");
-            intent.setType("message/rfc822");
-            chooser=Intent.createChooser(intent,"Send Email");
-            startActivity(chooser);
-            return true;
-        }
-        if (id==R.id.dis){
-            Intent i=new Intent(getActivity(),Disclaimer.class);
-            startActivity(i);
-            return true;
-        }
-        return true;
-    }
 }

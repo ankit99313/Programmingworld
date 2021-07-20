@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
 
             case R.id.fb_page:
-                goToFacebookPage("100221901725933");
+                goToFacebookPage("webandroid99");
                 break;
 
 
@@ -134,11 +134,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id==R.id.feedback){
             intent=new Intent(Intent.ACTION_SEND);
             intent.setData(Uri.parse("mailto:"));
-            String[] to={"ankit.03432@gmail.com"};
+            String[] to={"program@helpssite.com"};
             intent.putExtra(Intent.EXTRA_EMAIL,to);
             intent.putExtra(Intent.EXTRA_SUBJECT,"The C tutorial");
             intent.setType("message/rfc822");
-            chooser=Intent.createChooser(intent,"Send Email");
+            chooser=Intent.createChooser(intent,"Please Select Email");
             startActivity(chooser);
             return true;
         }

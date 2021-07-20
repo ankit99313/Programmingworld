@@ -120,8 +120,6 @@
         android:layout_height="wrap_content"
         android:alignmentMode="alignMargins"
         android:columnCount="2"
-
-
         android:columnOrderPreserved="false"
         android:rowCount="3">
 

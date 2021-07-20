@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     tools:context=".ChatActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -28,6 +28,7 @@
         android:visibility="invisible"></ProgressBar>
 
     <ListView
+
         android:id="@+id/list_of_messages"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

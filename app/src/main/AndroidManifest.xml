@@ -103,7 +103,7 @@
         <activity
             android:name=".ChatActivity"
             android:label="Discussion"
-            android:parentActivityName=".Dowhileloop"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Operators"
@@ -629,11 +629,11 @@
             android:parentActivityName=".Dowhileloop" />
         <activity
             android:name=".Nestingif"
-            android:label="Nesting If"
+            android:label="Nesting If else"
             android:parentActivityName=".Dowhileloop" />
         <activity
             android:name=".If"
-            android:label="If"
+            android:label="If and If else"
             android:parentActivityName=".Dowhileloop" />
         <activity
             android:name=".Sprintf"

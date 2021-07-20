@@ -23,8 +23,8 @@ public class AboutUs extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        TextView helpssite=(TextView)findViewById(R.id.helpssitelink);
-        helpssite.setMovementMethod(LinkMovementMethod.getInstance());
+      //  TextView helpssite=(TextView)findViewById(R.id.helpssitelink);
+        //helpssite.setMovementMethod(LinkMovementMethod.getInstance());
 
         ImageView facebook=(ImageView)findViewById(R.id.imgfacebook);
         facebook.setOnClickListener(new View.OnClickListener() {

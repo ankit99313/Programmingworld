@@ -222,6 +222,45 @@ public class FAQcontent1 extends AppCompatActivity {
                 }
 
 
+                //File content
+
+                if (iii=="1.What is FILES in C and its type ?")
+                {
+                    Intent intent=new Intent(FAQcontent1.this,Ffile1.class);
+                    startActivity(intent);
+                }
+
+                if (iii=="2.Error handling")
+                {
+                    Intent intent=new Intent(FAQcontent1.this,Ffile2.class);
+                    startActivity(intent);
+                }
+
+                if (iii=="3.What happen if we don't close a FILE ?")
+                {
+                    Intent intent=new Intent(FAQcontent1.this,Ffile3.class);
+                    startActivity(intent);
+                }
+
+                if (iii=="4.What is a file pointer ?")
+                {
+                    Intent intent=new Intent(FAQcontent1.this,Ffile4.class);
+                    startActivity(intent);
+                }
+
+                if (iii=="5.What is the purpose of rewind() ?")
+                {
+                    Intent intent=new Intent(FAQcontent1.this,Ffile5.class);
+                    startActivity(intent);
+                }
+
+                if (iii=="6.What is difference between file opening mode r+ and w+ in C ?")
+                {
+                    Intent intent=new Intent(FAQcontent1.this,Ffile6.class);
+                    startActivity(intent);
+                }
+
+
                 return false;
             }
         });
@@ -240,6 +279,7 @@ public class FAQcontent1 extends AppCompatActivity {
         topics1.add("4. Function");
         topics1.add("5. Structure and Union");
         topics1.add("6. Memory allocation");
+        topics1.add("7. File handling");
 
         List<String>Basics=new ArrayList<>();
         List<String>Pointer=new ArrayList<>();
@@ -247,6 +287,7 @@ public class FAQcontent1 extends AppCompatActivity {
         List<String>Function=new ArrayList<>();
         List<String>Structure=new ArrayList<>();
         List<String>Memory=new ArrayList<>();
+        List<String>File=new ArrayList<>();
 
         Basics.add("1.What is scope of a variable ?How are variables scoped in C ?");
         Basics.add("2.What are local static variables ?What is their use ?");
@@ -283,12 +324,20 @@ public class FAQcontent1 extends AppCompatActivity {
         Memory.add("3.What is static and dynamic memory allocation  ?");
         Memory.add("4.What is memory leak ?How to avoid this memory leak ?");
 
+        File.add("1.What is FILES in C and its type ?");
+        File.add("2.Error handling");
+        File.add("3.What happen if we don't close a FILE ?");
+        File.add("4.What is a file pointer ?");
+        File.add("5.What is the purpose of rewind() ?");
+        File.add("6.What is difference between file opening mode r+ and w+ in C ?");
+
         subtopics1.put(topics1.get(0),Basics);
         subtopics1.put(topics1.get(1),Pointer);
         subtopics1.put(topics1.get(2),Array);
         subtopics1.put(topics1.get(3),Function);
         subtopics1.put(topics1.get(4),Structure);
         subtopics1.put(topics1.get(5),Memory);
+        subtopics1.put(topics1.get(6), File);
 
 
     }
